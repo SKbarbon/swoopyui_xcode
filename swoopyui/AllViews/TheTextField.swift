@@ -31,7 +31,7 @@ struct TheTextField: View {
             ])
         }
             .onAppear() {
-                input = textData.text!
+                input = textData.text ?? ""
             }
     }
 }
