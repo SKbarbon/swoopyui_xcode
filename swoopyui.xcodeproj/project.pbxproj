@@ -11,6 +11,18 @@
 		AA36E53A2A0ABB4100E98505 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36E5392A0ABB4100E98505 /* ContentView.swift */; };
 		AA36E53C2A0ABB4100E98505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA36E53B2A0ABB4100E98505 /* Assets.xcassets */; };
 		AA36E53F2A0ABB4100E98505 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA36E53E2A0ABB4100E98505 /* Preview Assets.xcassets */; };
+		AAD2C7992A169E790075B36B /* ConnectingToHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C7982A169E790075B36B /* ConnectingToHostView.swift */; };
+		AAD2C79B2A16B1910075B36B /* OnErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C79A2A16B1910075B36B /* OnErrorView.swift */; };
+		AAFF5CDE2A174EF5009C2892 /* TheTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CDD2A174EF5009C2892 /* TheTextView.swift */; };
+		AAFF5CE12A175027009C2892 /* ColorsGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CE02A175027009C2892 /* ColorsGet.swift */; };
+		AAFF5CE42A17530D009C2892 /* jsonUpdatesFromHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CE32A17530D009C2892 /* jsonUpdatesFromHost.swift */; };
+		AAFF5CE82A178407009C2892 /* ClientSideUpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CE72A178407009C2892 /* ClientSideUpdateRequest.swift */; };
+		AAFF5CEA2A1793B1009C2892 /* TheButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CE92A1793B1009C2892 /* TheButtonView.swift */; };
+		AAFF5CEC2A179460009C2892 /* GetTheViewOfData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CEB2A179460009C2892 /* GetTheViewOfData.swift */; };
+		AAFF5CEE2A17AC08009C2892 /* TheNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CED2A17AC08009C2892 /* TheNavigationView.swift */; };
+		AAFF5CF02A17B825009C2892 /* TheNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CEF2A17B825009C2892 /* TheNavigationStack.swift */; };
+		AAFF5CF22A17C823009C2892 /* TheNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CF12A17C823009C2892 /* TheNavigationLink.swift */; };
+		AAFF5CF42A17DB09009C2892 /* TheTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CF32A17DB09009C2892 /* TheTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +32,19 @@
 		AA36E53B2A0ABB4100E98505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA36E53E2A0ABB4100E98505 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA36E5402A0ABB4100E98505 /* swoopyui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swoopyui.entitlements; sourceTree = "<group>"; };
+		AAC7456A2A18CBBC004B2ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AAD2C7982A169E790075B36B /* ConnectingToHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingToHostView.swift; sourceTree = "<group>"; };
+		AAD2C79A2A16B1910075B36B /* OnErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnErrorView.swift; sourceTree = "<group>"; };
+		AAFF5CDD2A174EF5009C2892 /* TheTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTextView.swift; sourceTree = "<group>"; };
+		AAFF5CE02A175027009C2892 /* ColorsGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsGet.swift; sourceTree = "<group>"; };
+		AAFF5CE32A17530D009C2892 /* jsonUpdatesFromHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonUpdatesFromHost.swift; sourceTree = "<group>"; };
+		AAFF5CE72A178407009C2892 /* ClientSideUpdateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSideUpdateRequest.swift; sourceTree = "<group>"; };
+		AAFF5CE92A1793B1009C2892 /* TheButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheButtonView.swift; sourceTree = "<group>"; };
+		AAFF5CEB2A179460009C2892 /* GetTheViewOfData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTheViewOfData.swift; sourceTree = "<group>"; };
+		AAFF5CED2A17AC08009C2892 /* TheNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNavigationView.swift; sourceTree = "<group>"; };
+		AAFF5CEF2A17B825009C2892 /* TheNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNavigationStack.swift; sourceTree = "<group>"; };
+		AAFF5CF12A17C823009C2892 /* TheNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheNavigationLink.swift; sourceTree = "<group>"; };
+		AAFF5CF32A17DB09009C2892 /* TheTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +77,11 @@
 		AA36E5362A0ABB4100E98505 /* swoopyui */ = {
 			isa = PBXGroup;
 			children = (
+				AAC7456A2A18CBBC004B2ED5 /* Info.plist */,
+				AAFF5CE22A1752E1009C2892 /* json_settings */,
+				AAFF5CDF2A17500F009C2892 /* Tools */,
+				AAFF5CDC2A174ED0009C2892 /* AllViews */,
+				AAD2C7972A169E450075B36B /* Pages */,
 				AA36E5372A0ABB4100E98505 /* swoopyuiApp.swift */,
 				AA36E5392A0ABB4100E98505 /* ContentView.swift */,
 				AA36E53B2A0ABB4100E98505 /* Assets.xcassets */,
@@ -67,6 +97,46 @@
 				AA36E53E2A0ABB4100E98505 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAD2C7972A169E450075B36B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AAD2C7982A169E790075B36B /* ConnectingToHostView.swift */,
+				AAD2C79A2A16B1910075B36B /* OnErrorView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		AAFF5CDC2A174ED0009C2892 /* AllViews */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF5CDD2A174EF5009C2892 /* TheTextView.swift */,
+				AAFF5CE92A1793B1009C2892 /* TheButtonView.swift */,
+				AAFF5CED2A17AC08009C2892 /* TheNavigationView.swift */,
+				AAFF5CEF2A17B825009C2892 /* TheNavigationStack.swift */,
+				AAFF5CF12A17C823009C2892 /* TheNavigationLink.swift */,
+				AAFF5CF32A17DB09009C2892 /* TheTextField.swift */,
+			);
+			path = AllViews;
+			sourceTree = "<group>";
+		};
+		AAFF5CDF2A17500F009C2892 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF5CE02A175027009C2892 /* ColorsGet.swift */,
+				AAFF5CE72A178407009C2892 /* ClientSideUpdateRequest.swift */,
+				AAFF5CEB2A179460009C2892 /* GetTheViewOfData.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		AAFF5CE22A1752E1009C2892 /* json_settings */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF5CE32A17530D009C2892 /* jsonUpdatesFromHost.swift */,
+			);
+			path = json_settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +209,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFF5CF22A17C823009C2892 /* TheNavigationLink.swift in Sources */,
+				AAFF5CEC2A179460009C2892 /* GetTheViewOfData.swift in Sources */,
+				AAFF5CE82A178407009C2892 /* ClientSideUpdateRequest.swift in Sources */,
+				AAFF5CE42A17530D009C2892 /* jsonUpdatesFromHost.swift in Sources */,
 				AA36E53A2A0ABB4100E98505 /* ContentView.swift in Sources */,
+				AAFF5CEA2A1793B1009C2892 /* TheButtonView.swift in Sources */,
 				AA36E5382A0ABB4100E98505 /* swoopyuiApp.swift in Sources */,
+				AAFF5CEE2A17AC08009C2892 /* TheNavigationView.swift in Sources */,
+				AAFF5CE12A175027009C2892 /* ColorsGet.swift in Sources */,
+				AAFF5CDE2A174EF5009C2892 /* TheTextView.swift in Sources */,
+				AAD2C79B2A16B1910075B36B /* OnErrorView.swift in Sources */,
+				AAFF5CF42A17DB09009C2892 /* TheTextField.swift in Sources */,
+				AAFF5CF02A17B825009C2892 /* TheNavigationStack.swift in Sources */,
+				AAD2C7992A169E790075B36B /* ConnectingToHostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,17 +345,22 @@
 		AA36E5442A0ABB4100E98505 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = appicon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = swoopyui/swoopyui.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swoopyui/Preview Content\"";
-				DEVELOPMENT_TEAM = FQ32248CKM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = swoopyui/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -282,6 +369,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swoopyui.swoopyui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -290,17 +378,22 @@
 		AA36E5452A0ABB4100E98505 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = appicon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = swoopyui/swoopyui.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swoopyui/Preview Content\"";
-				DEVELOPMENT_TEAM = FQ32248CKM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = swoopyui/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +402,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swoopyui.swoopyui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};

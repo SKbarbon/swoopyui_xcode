@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ConnectingToHostView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    var body: some View {        
+        HStack {
+            Text("Connecting to host 😃..")
+                .font(.title3).bold()
+        }
     }
 }
 

@@ -8,13 +8,27 @@
 import SwiftUI
 
 struct TheTextField: View {
+    @State var host_port : Int
+    @State var textData : SwoopyView
+    
+    @State var input = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TheTextField_Previews: PreviewProvider {
-    static var previews: some View {
-        TheTextField()
+        TextField("\(textData.placeholder!)", text: $input)
+            .foregroundColor(getColorFromString(colorName: textData.fgcolor!))
+            .frame(width: CGFloat(textData.width!), height: CGFloat(textData.height!))
+            .onChange(of: input, perform:{value in
+                ClientSideUpdateReq(hostPort: host_port, update_name: "on_view_action", update_content: [
+                    "action_name" : "on_change",
+                    "text" : input,
+                    "view_id" : textData.view_id
+                ])
+        })
+            .onSubmit {
+                ClientSideUpdateReq(hostPort: host_port, update_name: "on_view_action", update_content: [
+                    "action_name" : "on_submit",
+                    "text" : input,
+                    "view_id" : textData.view_id
+            ])
+        }
     }
 }

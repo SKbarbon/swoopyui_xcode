@@ -1,20 +1,19 @@
-//
-//  TheTextView.swift
-//  swoopyui
-//
-//  Created by Yousif Aladwani on 19/05/2023.
-//
+
 
 import SwiftUI
 
 struct TheTextView: View {
+    @State var host_port : Int
+    @State var textData : SwoopyView
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TheTextView_Previews: PreviewProvider {
-    static var previews: some View {
-        TheTextView()
+        Text("\(textData.text!)")
+            .foregroundColor(getColorFromString(colorName: textData.fgcolor!))
+            .onHover {d in
+                ClientSideUpdateReq(hostPort: host_port, update_name: "on_view_action", update_content: [
+                    "action_name" : "on_hover",
+                    "view_id" : textData.view_id,
+                    "hover_state" : "\(d)"
+                ])
+            }
     }
 }
