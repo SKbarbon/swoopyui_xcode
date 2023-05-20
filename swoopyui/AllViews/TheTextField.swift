@@ -30,5 +30,8 @@ struct TheTextField: View {
                     "view_id" : textData.view_id
             ])
         }
+            .onAppear() {
+                input = textData.text!
+            }
     }
 }
