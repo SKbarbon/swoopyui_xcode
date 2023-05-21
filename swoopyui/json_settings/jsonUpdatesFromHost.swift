@@ -30,4 +30,6 @@ struct SwoopyView : Codable, Equatable {
     var stack_type : String?
     var bold : Bool?
     var size : Float?
+    var scroll_to_view_id : Int?
+    var scroll_mode : String?
 }

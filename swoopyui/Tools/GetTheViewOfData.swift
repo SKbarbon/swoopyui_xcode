@@ -16,6 +16,8 @@ func GetTheDataView (swoopyuiViewData:SwoopyView, hostPort:Int) -> AnyView {
         return AnyView (TheTextField(host_port: hostPort, textData: swoopyuiViewData))
     }else if swoopyuiViewData.vname == "Stack" {
         return AnyView (TheStackView(host_port: hostPort, textData: swoopyuiViewData))
+    }else if swoopyuiViewData.vname == "ScrollView" {
+        return AnyView (TheScrollView(host_port: hostPort, textData: swoopyuiViewData))
     }
     
     
