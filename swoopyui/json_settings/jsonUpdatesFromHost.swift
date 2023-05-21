@@ -27,4 +27,7 @@ struct SwoopyView : Codable, Equatable {
     var width : Float?
     var height : Float?
     var sub_views : [SwoopyView]?
+    var stack_type : String?
+    var bold : Bool?
+    var size : Float?
 }
