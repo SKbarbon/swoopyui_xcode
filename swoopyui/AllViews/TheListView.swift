@@ -1,20 +1,14 @@
-//
-//  TheListView.swift
-//  swoopyui
-//
-//  Created by Yousif Aladwani on 25/05/2023.
-//
 
 import SwiftUI
 
 struct TheListView: View {
+    @State var host_port : Int
+    @State var textData : SwoopyView
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TheListView_Previews: PreviewProvider {
-    static var previews: some View {
-        TheListView()
+        List {
+            ForEach(textData.sub_views!, id: \.view_id) { sub_view in
+                GetTheDataView(swoopyuiViewData: sub_view, hostPort: host_port)
+            }
+        }
     }
 }

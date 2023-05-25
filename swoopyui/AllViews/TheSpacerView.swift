@@ -8,13 +8,9 @@
 import SwiftUI
 
 struct TheSpacerView: View {
+    @State var host_port : Int
+    @State var textData : SwoopyView
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TheSpacerView_Previews: PreviewProvider {
-    static var previews: some View {
-        TheSpacerView()
+        Spacer()
     }
 }

@@ -12,8 +12,10 @@ struct TheNavigationStack: View {
     @State var textData : SwoopyView
     var body: some View {
         NavigationStack {
-            ForEach(textData.sub_views!, id: \.view_id) { sub_view in
-                GetTheDataView(swoopyuiViewData: sub_view, hostPort: host_port)
+            VStack {
+                ForEach(textData.sub_views!, id: \.view_id) { sub_view in
+                    GetTheDataView(swoopyuiViewData: sub_view, hostPort: host_port)
+                }
             }
             .navigationTitle("\(textData.title!)")
         }

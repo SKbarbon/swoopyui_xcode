@@ -18,6 +18,14 @@ func GetTheDataView (swoopyuiViewData:SwoopyView, hostPort:Int) -> AnyView {
         return AnyView (TheStackView(host_port: hostPort, textData: swoopyuiViewData))
     }else if swoopyuiViewData.vname == "ScrollView" {
         return AnyView (TheScrollView(host_port: hostPort, textData: swoopyuiViewData))
+    }else if swoopyuiViewData.vname == "Spacer" {
+        return AnyView (TheSpacerView(host_port: hostPort, textData: swoopyuiViewData))
+    }else if swoopyuiViewData.vname == "List" {
+        return AnyView (TheListView(host_port: hostPort, textData: swoopyuiViewData))
+    }
+    // shapes
+    else if swoopyuiViewData.vname == "Circle" {
+        return AnyView (TheCircleShape(host_port: hostPort, textData: swoopyuiViewData))
     }
     
     

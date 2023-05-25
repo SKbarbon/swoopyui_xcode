@@ -1,9 +1,3 @@
-//
-//  TheScrollView.swift
-//  swoopyui
-//
-//  Created by Yousif Aladwani on 21/05/2023.
-//
 
 import SwiftUI
 

@@ -11,6 +11,9 @@
 		AA36E53A2A0ABB4100E98505 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA36E5392A0ABB4100E98505 /* ContentView.swift */; };
 		AA36E53C2A0ABB4100E98505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA36E53B2A0ABB4100E98505 /* Assets.xcassets */; };
 		AA36E53F2A0ABB4100E98505 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA36E53E2A0ABB4100E98505 /* Preview Assets.xcassets */; };
+		AA624D302A1FA00C00480B4E /* TheSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA624D2F2A1FA00C00480B4E /* TheSpacerView.swift */; };
+		AA624D322A1FA6A200480B4E /* TheListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA624D312A1FA6A200480B4E /* TheListView.swift */; };
+		AA624D352A1FB1DE00480B4E /* TheCircleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA624D342A1FB1DE00480B4E /* TheCircleShape.swift */; };
 		AAC036982A1A03F200C79003 /* TheStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC036972A1A03F200C79003 /* TheStackView.swift */; };
 		AAC0369A2A1A258000C79003 /* TheScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC036992A1A258000C79003 /* TheScrollView.swift */; };
 		AAD2C7992A169E790075B36B /* ConnectingToHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C7982A169E790075B36B /* ConnectingToHostView.swift */; };
@@ -34,6 +37,9 @@
 		AA36E53B2A0ABB4100E98505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA36E53E2A0ABB4100E98505 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA36E5402A0ABB4100E98505 /* swoopyui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = swoopyui.entitlements; sourceTree = "<group>"; };
+		AA624D2F2A1FA00C00480B4E /* TheSpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSpacerView.swift; sourceTree = "<group>"; };
+		AA624D312A1FA6A200480B4E /* TheListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheListView.swift; sourceTree = "<group>"; };
+		AA624D342A1FB1DE00480B4E /* TheCircleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCircleShape.swift; sourceTree = "<group>"; };
 		AAC036972A1A03F200C79003 /* TheStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheStackView.swift; sourceTree = "<group>"; };
 		AAC036992A1A258000C79003 /* TheScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheScrollView.swift; sourceTree = "<group>"; };
 		AAC7456A2A18CBBC004B2ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +109,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AA624D332A1FB1B100480B4E /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				AA624D342A1FB1DE00480B4E /* TheCircleShape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
 		AAD2C7972A169E450075B36B /* Pages */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +129,7 @@
 		AAFF5CDC2A174ED0009C2892 /* AllViews */ = {
 			isa = PBXGroup;
 			children = (
+				AA624D332A1FB1B100480B4E /* Shapes */,
 				AAFF5CDD2A174EF5009C2892 /* TheTextView.swift */,
 				AAFF5CE92A1793B1009C2892 /* TheButtonView.swift */,
 				AAFF5CED2A17AC08009C2892 /* TheNavigationView.swift */,
@@ -123,6 +138,8 @@
 				AAFF5CF32A17DB09009C2892 /* TheTextField.swift */,
 				AAC036972A1A03F200C79003 /* TheStackView.swift */,
 				AAC036992A1A258000C79003 /* TheScrollView.swift */,
+				AA624D2F2A1FA00C00480B4E /* TheSpacerView.swift */,
+				AA624D312A1FA6A200480B4E /* TheListView.swift */,
 			);
 			path = AllViews;
 			sourceTree = "<group>";
@@ -218,10 +235,12 @@
 				AAFF5CF22A17C823009C2892 /* TheNavigationLink.swift in Sources */,
 				AAFF5CEC2A179460009C2892 /* GetTheViewOfData.swift in Sources */,
 				AAFF5CE82A178407009C2892 /* ClientSideUpdateRequest.swift in Sources */,
+				AA624D302A1FA00C00480B4E /* TheSpacerView.swift in Sources */,
 				AAFF5CE42A17530D009C2892 /* jsonUpdatesFromHost.swift in Sources */,
 				AA36E53A2A0ABB4100E98505 /* ContentView.swift in Sources */,
 				AAFF5CEA2A1793B1009C2892 /* TheButtonView.swift in Sources */,
 				AA36E5382A0ABB4100E98505 /* swoopyuiApp.swift in Sources */,
+				AA624D352A1FB1DE00480B4E /* TheCircleShape.swift in Sources */,
 				AAFF5CEE2A17AC08009C2892 /* TheNavigationView.swift in Sources */,
 				AAFF5CE12A175027009C2892 /* ColorsGet.swift in Sources */,
 				AAC0369A2A1A258000C79003 /* TheScrollView.swift in Sources */,
@@ -230,6 +249,7 @@
 				AAC036982A1A03F200C79003 /* TheStackView.swift in Sources */,
 				AAFF5CF42A17DB09009C2892 /* TheTextField.swift in Sources */,
 				AAFF5CF02A17B825009C2892 /* TheNavigationStack.swift in Sources */,
+				AA624D322A1FA6A200480B4E /* TheListView.swift in Sources */,
 				AAD2C7992A169E790075B36B /* ConnectingToHostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

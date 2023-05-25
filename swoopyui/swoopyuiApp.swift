@@ -10,11 +10,26 @@ struct swoopyui: App {
     @State var connected : Bool = false
     var body: some Scene {
         WindowGroup {
+            VStack {}
             if start_app {
                 ContentView(hostPort: host_port)
                     .onAppear() {
                         NSApplication.shared.activate(ignoringOtherApps: true)
                         submit_and_run_python_target_function()
+                        #if os(macOS)
+                        // center the window on the middle
+                        if let window = NSApplication.shared.windows.first {
+                            // Calculate the new frame for the window
+                            let screenSize = NSScreen.main?.visibleFrame
+                            let windowSize = window.frame.size
+                            let originX = (screenSize?.width ?? 0) / 2 - windowSize.width / 2
+                            let originY = (screenSize?.height ?? 0) / 2 - windowSize.height / 2
+                            let newFrame = CGRect(x: originX, y: originY, width: windowSize.width, height: windowSize.height)
+                                                
+                            // Set the new frame for the window
+                            window.setFrame(newFrame, display: true)
+                        }
+                        #endif
                     }
                     .onDisappear {
                         tell_host_to_close()
@@ -27,7 +42,9 @@ struct swoopyui: App {
                 // Access command-line arguments
                 let commandLineArguments = CommandLine.arguments
                 // Process the arguments as needed
+                #if os(macOS)
                 processCommandLineArguments(commandLineArguments)
+                #endif
                 start_app = true
             }
         }
