@@ -22,6 +22,8 @@ func GetTheDataView (swoopyuiViewData:SwoopyView, hostPort:Int) -> AnyView {
         return AnyView (TheSpacerView(host_port: hostPort, textData: swoopyuiViewData))
     }else if swoopyuiViewData.vname == "List" {
         return AnyView (TheListView(host_port: hostPort, textData: swoopyuiViewData))
+    }else if swoopyuiViewData.vname == "Image" {
+        return AnyView (TheImageView(host_port: hostPort, textData: swoopyuiViewData))
     }
     // shapes
     else if swoopyuiViewData.vname == "Circle" {

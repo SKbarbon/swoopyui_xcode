@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct TheImageView: View {
+    @State var host_port : Int
+    @State var textData : SwoopyView
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TheImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        TheImageView()
+        AsyncImage(url: URL(string: "\(textData.image_name!)")) { phase in
+            if let image = phase.image {
+                if textData.scall_to_fit == true {
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: CGFloat(textData.width!), height: CGFloat(textData.height!))
+                }else {
+                    image
+                        .resizable()
+                        .frame(width: CGFloat(textData.width!), height: CGFloat(textData.height!))
+                }
+            } else if phase.error != nil {
+                Text("Error while load the image!")
+                    .background(.red)
+                    .foregroundColor(.white)
+                    .font(.title3)
+            } else {
+                
+            }
+        }
     }
 }

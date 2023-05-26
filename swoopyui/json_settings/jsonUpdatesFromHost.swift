@@ -32,4 +32,6 @@ struct SwoopyView : Codable, Equatable {
     var size : Float?
     var scroll_to_view_id : Int?
     var scroll_mode : String?
+    var image_name : String?
+    var scall_to_fit : Bool?
 }
