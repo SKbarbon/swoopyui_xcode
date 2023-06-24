@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct TheAnimatedView: View {
+    @State var host_port : Int
+    @State var textData : SwoopyView
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TheAnimatedView_Previews: PreviewProvider {
-    static var previews: some View {
-        TheAnimatedView()
+        if textData.resizeable == true {
+            VStack {
+                ForEach(textData.sub_views!, id: \.view_id) { sub_view in
+                    GetTheDataView(swoopyuiViewData: sub_view, hostPort: host_port)
+                }
+            }
+            .frame(width: CGFloat(textData.width!), height: CGFloat(textData.height!))
+            .animation(.default, value: UUID())
+        }else{
+            VStack {
+                ForEach(textData.sub_views!, id: \.view_id) { sub_view in
+                    GetTheDataView(swoopyuiViewData: sub_view, hostPort: host_port)
+                }
+            }
+            .animation(.default, value: UUID())
+        }
     }
 }

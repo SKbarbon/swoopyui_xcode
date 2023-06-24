@@ -24,6 +24,10 @@ func GetTheDataView (swoopyuiViewData:SwoopyView, hostPort:Int) -> AnyView {
         return AnyView (TheListView(host_port: hostPort, textData: swoopyuiViewData))
     }else if swoopyuiViewData.vname == "Image" {
         return AnyView (TheImageView(host_port: hostPort, textData: swoopyuiViewData))
+    }else if swoopyuiViewData.vname == "WebView" {
+        return AnyView(TheWebView(host_port: hostPort, textData: swoopyuiViewData))
+    }else if swoopyuiViewData.vname == "AnimatedView" {
+        return AnyView(TheAnimatedView(host_port: hostPort, textData: swoopyuiViewData))
     }
     // shapes
     else if swoopyuiViewData.vname == "Circle" {
@@ -31,5 +35,5 @@ func GetTheDataView (swoopyuiViewData:SwoopyView, hostPort:Int) -> AnyView {
     }
     
     
-    return AnyView(Text("Unknown View!"))
+    return AnyView(Text("API Error: Unknown View called '\(swoopyuiViewData.vname)'!").foregroundColor(.red).bold())
 }

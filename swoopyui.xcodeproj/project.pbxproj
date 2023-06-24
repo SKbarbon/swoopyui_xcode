@@ -19,6 +19,9 @@
 		AAC0369A2A1A258000C79003 /* TheScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC036992A1A258000C79003 /* TheScrollView.swift */; };
 		AAD2C7992A169E790075B36B /* ConnectingToHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C7982A169E790075B36B /* ConnectingToHostView.swift */; };
 		AAD2C79B2A16B1910075B36B /* OnErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD2C79A2A16B1910075B36B /* OnErrorView.swift */; };
+		AAE5C5DA2A476B4E002C604D /* WebViewKit in Frameworks */ = {isa = PBXBuildFile; productRef = AAE5C5D92A476B4E002C604D /* WebViewKit */; };
+		AAE5C5DC2A476C05002C604D /* TheWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5C5DB2A476C05002C604D /* TheWebView.swift */; };
+		AAE5C5DE2A4772E8002C604D /* TheAnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5C5DD2A4772E8002C604D /* TheAnimatedView.swift */; };
 		AAFF5CDE2A174EF5009C2892 /* TheTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CDD2A174EF5009C2892 /* TheTextView.swift */; };
 		AAFF5CE12A175027009C2892 /* ColorsGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CE02A175027009C2892 /* ColorsGet.swift */; };
 		AAFF5CE42A17530D009C2892 /* jsonUpdatesFromHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFF5CE32A17530D009C2892 /* jsonUpdatesFromHost.swift */; };
@@ -47,6 +50,8 @@
 		AAC7456A2A18CBBC004B2ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AAD2C7982A169E790075B36B /* ConnectingToHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingToHostView.swift; sourceTree = "<group>"; };
 		AAD2C79A2A16B1910075B36B /* OnErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnErrorView.swift; sourceTree = "<group>"; };
+		AAE5C5DB2A476C05002C604D /* TheWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheWebView.swift; sourceTree = "<group>"; };
+		AAE5C5DD2A4772E8002C604D /* TheAnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheAnimatedView.swift; sourceTree = "<group>"; };
 		AAFF5CDD2A174EF5009C2892 /* TheTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTextView.swift; sourceTree = "<group>"; };
 		AAFF5CE02A175027009C2892 /* ColorsGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsGet.swift; sourceTree = "<group>"; };
 		AAFF5CE32A17530D009C2892 /* jsonUpdatesFromHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonUpdatesFromHost.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE5C5DA2A476B4E002C604D /* WebViewKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +149,8 @@
 				AA624D2F2A1FA00C00480B4E /* TheSpacerView.swift */,
 				AA624D312A1FA6A200480B4E /* TheListView.swift */,
 				AA5B4D2B2A20BADA0034F03B /* TheImageView.swift */,
+				AAE5C5DB2A476C05002C604D /* TheWebView.swift */,
+				AAE5C5DD2A4772E8002C604D /* TheAnimatedView.swift */,
 			);
 			path = AllViews;
 			sourceTree = "<group>";
@@ -181,6 +189,9 @@
 			dependencies = (
 			);
 			name = swoopyui;
+			packageProductDependencies = (
+				AAE5C5D92A476B4E002C604D /* WebViewKit */,
+			);
 			productName = swoopyui;
 			productReference = AA36E5342A0ABB4100E98505 /* swoopyui.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +220,9 @@
 				Base,
 			);
 			mainGroup = AA36E52B2A0ABB4000E98505;
+			packageReferences = (
+				AAE5C5D82A476B4E002C604D /* XCRemoteSwiftPackageReference "WebViewKit" */,
+			);
 			productRefGroup = AA36E5352A0ABB4100E98505 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,6 +252,7 @@
 				AA5B4D2C2A20BADA0034F03B /* TheImageView.swift in Sources */,
 				AAFF5CF22A17C823009C2892 /* TheNavigationLink.swift in Sources */,
 				AAFF5CEC2A179460009C2892 /* GetTheViewOfData.swift in Sources */,
+				AAE5C5DE2A4772E8002C604D /* TheAnimatedView.swift in Sources */,
 				AAFF5CE82A178407009C2892 /* ClientSideUpdateRequest.swift in Sources */,
 				AA624D302A1FA00C00480B4E /* TheSpacerView.swift in Sources */,
 				AAFF5CE42A17530D009C2892 /* jsonUpdatesFromHost.swift in Sources */,
@@ -255,6 +270,7 @@
 				AAFF5CF02A17B825009C2892 /* TheNavigationStack.swift in Sources */,
 				AA624D322A1FA6A200480B4E /* TheListView.swift in Sources */,
 				AAD2C7992A169E790075B36B /* ConnectingToHostView.swift in Sources */,
+				AAE5C5DC2A476C05002C604D /* TheWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = appicon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = swoopyui/swoopyui.entitlements;
@@ -392,7 +408,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = swoopyui/Info.plist;
-				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,7 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = appicon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = swoopyui/swoopyui.entitlements;
@@ -425,7 +441,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = swoopyui/Info.plist;
-				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_LSUIElement = NO;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +478,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAE5C5D82A476B4E002C604D /* XCRemoteSwiftPackageReference "WebViewKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/WebViewKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAE5C5D92A476B4E002C604D /* WebViewKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAE5C5D82A476B4E002C604D /* XCRemoteSwiftPackageReference "WebViewKit" */;
+			productName = WebViewKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA36E52C2A0ABB4000E98505 /* Project object */;
 }

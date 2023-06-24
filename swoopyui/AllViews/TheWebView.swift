@@ -1,20 +1,15 @@
-//
-//  TheWebView.swift
-//  swoopyui
-//
-//  Created by Yousif Aladwani on 24/06/2023.
-//
-
+import WebViewKit
 import SwiftUI
 
 struct TheWebView: View {
+    @State var host_port : Int
+    @State var textData : SwoopyView
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct TheWebView_Previews: PreviewProvider {
-    static var previews: some View {
-        TheWebView()
+        if textData.resizeable == true {
+            WebView(url: URL(string: "\(textData.value!)")!)
+                .frame(width: CGFloat(textData.width!), height: CGFloat(textData.height!))
+        }else{
+            WebView(url: URL(string: "\(textData.value!)")!)
+        }
     }
 }

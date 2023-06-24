@@ -28,7 +28,6 @@ struct ContentView: View {
                 }
             }
         }
-        .animation(.easeIn, value: UUID())
         .onReceive(timer){_ in
             getHostUpdates()
         }
